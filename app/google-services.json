@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "244873611835",
+    "project_id": "sabjee-f81c5",
+    "storage_bucket": "sabjee-f81c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244873611835:android:755234a60fc26227972a1e",
+        "android_client_info": {
+          "package_name": "com.example.android.sabjee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244873611835-kfmti48ohqru27e3f8jhrrqnpm9d35fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1NheUqKoW9-dOfENJHmOy4XZcuj1E1F8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244873611835-kfmti48ohqru27e3f8jhrrqnpm9d35fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
