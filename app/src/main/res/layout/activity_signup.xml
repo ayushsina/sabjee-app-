@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/sabji1"
     tools:context=".SignupActivity">
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
@@ -14,7 +16,7 @@
         android:layout_marginTop="184dp"
         android:text="EMAIL ADDRESS"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,7 +42,7 @@
         android:layout_marginTop="15dp"
         android:text="PASSWORD"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email2" />
 
@@ -79,7 +81,7 @@
         android:layout_marginTop="15dp"
         android:text="CONFIRM PASSWORD"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password2" />
 
