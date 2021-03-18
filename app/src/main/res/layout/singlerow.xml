@@ -1,51 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:id="@+id/cardview"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.anfroid.com/apk/res-auto"
     xmlns:app1="http://schemas.android.com/apk/res-auto"
     app1:cardCornerRadius="5dp"
     android:elevation="5dp"
-    app1:cardUseCompatPadding="true">
+    app1:cardUseCompatPadding="true"
+    >
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp">
+
+
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img"
             android:layout_width="96dp"
             android:layout_height="96dp"
-            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
             android:src="@mipmap/ic_launcher"
-            android:id="@+id/img"
-            app1:civ_border_width="2dp"
-            app:civ_border_color="#FF000000"/>
+             />
+
+
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/vegetbale"
-            android:text="Vegetable name"
+            android:text="Vegetable"
             android:textStyle="bold"
             android:textSize="25sp"
+            android:layout_marginTop="10dp"
             android:textColor="#000"
-            android:layout_toRightOf="@+id/img"
-            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/img"
+
+            />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vegetbale"
+            android:text="Vegetable"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹"
+            android:layout_toRightOf="@+id/price"
+            android:layout_below="@+id/vegetbale"
+            android:textColor="#000"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_width="40dp"
+            android:id="@+id/pos"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_below="@id/img"
+            android:text="-"
+            android:textSize="25dp"
+            android:layout_toRightOf="@id/vegetbale"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
             />
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/price"
-            android:text="Vegetable Price"
-            android:textStyle="bold"
-            android:textSize="25sp"
-            android:textColor="#000"
-            android:layout_toRightOf="@+id/img"
-            android:layout_below="@id/vegetbale"
-            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_below="@id/img"
+            android:layout_height="40dp"
+            android:id="@+id/count"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:text="10"
+            android:layout_toRightOf="@id/pos"
+            />
+        <TextView
+            android:layout_width="40dp"
+            android:id="@+id/neg"
+            android:layout_height="40dp"
+            android:layout_below="@id/img"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/count"
+            android:text="+"
+            android:textSize="25dp"
+
+
+
             />
 
-
-
-
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/count"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="-10dp"
+            android:layout_toRightOf="@+id/price"
+            android:backgroundTint="#a4c639"
+            android:text="Add"
+            />
 
 
     </RelativeLayout>
