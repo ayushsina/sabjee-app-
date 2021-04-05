@@ -3,7 +3,6 @@ package com.example.android.sabjee;
 public class model {
     String vegname,purl;
     Long price;
-
     public model() {
     }
 

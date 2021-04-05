@@ -5,8 +5,12 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.GridLayoutAnimationController;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
@@ -18,6 +22,9 @@ public class mainscreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainscreen);
         recview=(RecyclerView)findViewById(R.id.recview);
@@ -27,10 +34,9 @@ public class mainscreen extends AppCompatActivity {
                 new FirebaseRecyclerOptions.Builder<model>()
                         .setQuery(FirebaseDatabase.getInstance().getReference("vegetable"), model.class)
                         .build();
-        adapter=new myadapter(options);
+        adapter=new myadapter(options,getApplicationContext());
         recview.setAdapter(adapter);
         /* code for grid vie
-
          */
 
 //        LinearLayoutManager layoutManager=new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
@@ -42,6 +48,11 @@ public class mainscreen extends AppCompatActivity {
 
 
     }
+
+
+
+
+
     @Override
     protected void onStart() {
         super.onStart();
